@@ -1,0 +1,14 @@
+<ul>
+  {{#each todo in model}}
+    <li>
+      {{#link-to 'todo' todo}}
+        {{todo.title}},
+        {{todo.task}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No todos found.</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

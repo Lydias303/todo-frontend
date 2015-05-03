@@ -3,6 +3,9 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'todolist-frontend',
+    contentSecurityPolicy: {
+      'connect-src': "*"
+    },
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
